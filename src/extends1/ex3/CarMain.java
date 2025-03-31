@@ -1,20 +1,24 @@
-package extends1.ex2;
+package extends1.ex3;
 
 public class CarMain {
 
-    static int num = 10;
 
     public static void main(String[] args) {
         ElectricCar electricCar = new ElectricCar();
         electricCar.move();
         electricCar.charge();
+        electricCar.opendDoor();
 
         GasCar gasCar = new GasCar();
         gasCar.move();
         gasCar.fillUp();
+        gasCar.opendDoor();
 
 
-        System.out.println("static int num = "+num);
+        HydrogenCar hydrogenCar = new HydrogenCar();
+        hydrogenCar.move();
+        hydrogenCar.fillHydrogen();
+        hydrogenCar.opendDoor();
     }
 
 
